@@ -1,0 +1,44 @@
+{
+  "name": "sketchfab-viewer",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/sketchfab-viewer.es.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeaBassLab/sketchfab-viewer.git"
+  },
+  "author": "SeaBassLab",
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "component",
+    "sketchfab",
+    "viewer",
+    "3d",
+    "model",
+    "gltf",
+    "usdz",
+    "iframe",
+    "ar",
+    "vr"
+  ],
+  "exports": {
+    ".": "./dist/sketchfab-viewer.es.js"
+  },
+  "types": "types/sketchfab-viewer.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "lit": "^2.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}
