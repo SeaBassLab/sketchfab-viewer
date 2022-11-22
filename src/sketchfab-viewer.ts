@@ -14,6 +14,7 @@ import {
 } from "./params";
 import { viewer_styles } from "./styles";
 import { loaderTemplate } from "./loaderTemplate";
+import React from "react";
 /**
  * The sketchfab-viewer element allows authors to include dynamic 3D models from https://sketchfab.com in their documents.
  *
@@ -198,6 +199,9 @@ export class SketchfabViewer extends LitElement {
     );
   }
 }
+
+export const ReactSketchfabViewer = React.createElement("sketchfab-viewer");
+
 declare global {
   interface HTMLElementTagNameMap {
     "sketchfab-viewer": SketchfabViewer;
