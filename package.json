@@ -1,8 +1,8 @@
 {
   "name": "sketchfab-viewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "main": "dist/sketchfab-viewer.es.js",
+  "main": "dist/sketchfab-viewer.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SeaBassLab/sketchfab-viewer.git"
@@ -23,7 +23,7 @@
     "vr"
   ],
   "exports": {
-    ".": "./dist/sketchfab-viewer.es.js"
+    ".": "./dist/sketchfab-viewer.js"
   },
   "types": "types/sketchfab-viewer.d.ts",
   "files": [
