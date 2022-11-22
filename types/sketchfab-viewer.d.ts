@@ -65,3 +65,6 @@ declare global {
         "sketchfab-viewer": SketchfabViewer;
     }
 }
+export declare const SketchfabViewerReact: import("@lit-labs/react").ReactWebComponent<SketchfabViewer, {
+    updateSettings: string;
+}>;
