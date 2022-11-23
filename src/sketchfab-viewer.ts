@@ -160,13 +160,17 @@ export class SketchfabViewer extends LitElement {
 
   protected _handleMessageEvent = (event: MessageEvent<any>) => {
     const { data } = event;
+    const results: unknown[] = data.results;
     const options = {
       detail: { data },
       bubbles: true,
       composed: true,
     };
-    if (data.results) {
-      data.results[0] === "viewerready" && this._sendMessage();
+    if (results && Array.isArray(results)) {
+      results.forEach((item) => {
+        if (item === null || item === undefined) return;
+        item === "viewerready" && this._sendMessage();
+      });
     }
     if (data.type) {
       data.type === "api.request.result" &&
